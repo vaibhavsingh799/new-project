@@ -32,8 +32,9 @@
             </ul>
         </nav>
     </div>
-    </header>
-    
+</header>
+
+<div class="one-more"></div>
     <div class="main">
         <div class="left-side">
         <div class="main-text">
@@ -398,7 +399,7 @@
 
     <!-- down to up button -->
     <div class="up">
-        <button title="go to top"><a href=""></a></button>
+        <button title="go to top" class="go" id="go"> <img src="./chevrons-up-solid-36.png" ></button>
     </div>
 
     <div class="foot">
@@ -424,7 +425,6 @@
             // let b = document.getElementsByClassName('bgcolor')[0]
             // var foncolor3 = document.getElementById('fon-color3');
             
-            // var scrollValue = window.scrollY;
             if(window.pageYOffset > 150){
                 header.classList.add('bgcolor')
                 foncolor.classList.add('fon-color')
@@ -441,6 +441,16 @@
                 foncolor2.classList.remove('foncolor2')
                 foncolor3.classList.remove('foncolor3')
                 btchange.classList.remove('btchange')
+            }
+
+            let go = document.getElementById('go');
+            let scrollValue = window.scrollY;
+            if(scrollValue > 250){
+                go.classList.add('top');
+            }
+            else{
+                go.classList.remove('top');
+
             }
         }
 
