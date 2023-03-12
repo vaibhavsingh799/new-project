@@ -399,7 +399,8 @@
 
     <!-- down to up button -->
     <div class="up">
-        <button title="go to top" class="go" id="go"> <img src="./chevrons-up-solid-36.png" ></button>
+        <button title="go to top" class="go" id="go"> <a href="#"><img src="./chevrons-up-solid-36.png" ></a> </button>
+        <!-- <img src="./chevrons-up-solid-36.png" > -->
     </div>
 
     <div class="foot">
@@ -442,6 +443,9 @@
                 foncolor3.classList.remove('foncolor3')
                 btchange.classList.remove('btchange')
             }
+
+
+            //  go-to-top button 
 
             let go = document.getElementById('go');
             let scrollValue = window.scrollY;

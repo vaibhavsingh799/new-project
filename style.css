@@ -901,7 +901,10 @@ footer{
 }
 .up button:hover{
     background-color: #2b2350;
-    box-shadow: 0 0 10px #5441ab, 0 0 20px #07060c;
+    box-shadow: 0 0 20px #2b2350;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 @keyframes up {
@@ -912,10 +915,10 @@ footer{
         bottom: 25px;
     }
 }
-.up button a::after{
+/* .up button a::after{
     content: "<";
     color: #f1f8fb;
-}
+} */
 
 .foot{
     background-color: #2b2350;
