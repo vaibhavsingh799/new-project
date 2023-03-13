@@ -543,6 +543,7 @@ font-size: 16px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 20px;
+    gap: 7%;
 }
 .theway .girl{
     position: relative;
@@ -881,6 +882,7 @@ footer{
 /* button down to up  */
 .up{
     position: relative;
+    cursor: pointer;
 }
 .up button{
     position: fixed;
@@ -1042,6 +1044,11 @@ transition: all 0.3s linear;
         background-color: #000;
         visibility: visible;
         pointer-events: auto;
+      }
+      .mobile button{
+        position: relative;
+top: 10px;
+left: -13px;
       }
 
     
