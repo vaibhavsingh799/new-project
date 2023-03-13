@@ -30,13 +30,13 @@ section{
 .main .left-side .main-text h2{
     font-weight: 800;
     text-transform: capitalize;
-    font-size: 53px;
+    font-size: 55px;
     color: #fff;
 }
 .main .left-side .main-box p{
     margin: 5% 0;
     line-height: 1.7;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
     letter-spacing: 0.5px;
@@ -51,6 +51,12 @@ section{
     border: none;
     color: #fff;
 }
+.main .left-side .main-button button img{
+    width: 18px;
+    position: relative;
+    top: 3px;
+}
+
 .main .main-video{
     position: relative;
     top: 45px;
@@ -221,7 +227,7 @@ i{
     content: '';
 position: relative;
 display: block;
-height: 3px;
+height: 2.5px;
 width: 42px;
 background: #ed1575;
 left: 505px;
@@ -233,7 +239,7 @@ font-weight: 600;
     content: '';
 position: relative;
 display: block;
-height: 3px;
+height: 2.5px;
 background: #ed1575;
 left: 627px;
 top: -13px;
@@ -343,7 +349,7 @@ h3{
     content: '';
     position: relative;
     display: block;
-    height: 1.5px;
+    height: 2.5px;
     background: #ed1575;
     left: 644px;
     top: -12px;
@@ -463,7 +469,8 @@ word-spacing: 0.9px;
 .image img{
     width: 80%;
     position: relative;
-top: -40px;
+    top: -45px;
+    left: 55px;
 }
 .text ul{
     margin-top: 25px;
@@ -524,7 +531,7 @@ font-size: 16px;
     content: '';
     position: absolute;
     display: block;
-    height: 3px;
+    height: 2.5px;
     background: #ed1575;
     left: 142px;
     top: 10px;
@@ -573,7 +580,7 @@ line-height: 1.5;
     position: relative;
 top: -17px;
 left: 10px;
-font-size: 18px;
+font-size: 1.1rem;
     font-weight: 400;
 line-height: 1.4;
 letter-spacing: 0.5px;
@@ -606,7 +613,7 @@ margin-top: 20px;
     content: "";
     position: relative;
     display: block;
-    height: 3px;
+    height: 2.5px;
     width: 42px;
     background: rgb(237, 21, 117);
     left: 525px;
@@ -618,7 +625,7 @@ margin-top: 20px;
     content: "";
     position: relative;
     display: block;
-    height: 3px;
+    height: 2.5px;
     background: rgb(237, 21, 117);
     left: 648px;
     top: -13px;
@@ -947,4 +954,269 @@ html{
     place-items: center;
     color: #fff;
     font-size: 17px;
+}
+
+.res-logo img{
+    display: none;
+}
+.past-logo{
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width:500px) {
+    section{
+        border-radius: unset;
+height: 760px;
+    }
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 12px;
+        /* position: relative; */
+        top: 90px;
+        gap: 0;
+    }
+    .main .left-side .main-text h1{
+        font-size: 16px;
+    }
+    .main .left-side .main-text h2{
+        font-size: 35px;
+    }
+    .main .left-side .main-box p{
+        font-size: 16px;
+    }
+    .main .main-video{
+        top: 17px;
+    }
+    .main .main-video video{
+        width: 95%;
+        height: auto;
+    }
+    section video{
+        height: 105%;
+        width: unset;
+    }
+
+    .logo img{
+        width: 72px;
+    }
+    .res-logo img{
+        display: block;
+        position: relative;
+left: 110px;
+top: -5px;
+    }
+    header nav ul{
+        opacity: 1.1;
+visibility: visible;
+pointer-events: none;
+width: 216%;
+height: 100vh;
+background-color: #000;
+position: absolute;
+top: -30px;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-size: 30px;
+transform: translateX(100%);
+transition: all 0.3s linear;
+    }
+    .mobile{
+        transform: translateX(-262px);
+        opacity: 1;
+        background-color: #000;
+        visibility: visible;
+        pointer-events: auto;
+      }
+
+    
+
+
+
+
+    .services{
+        padding: 5% 5% 15% 5%;
+    }
+    .heading i{
+        font-size: 15px;
+    }
+    .heading i::before{
+        left: 120px;
+        top: 10px;
+    }
+    .heading i::after{
+        left: 241px;
+        top: -10px;
+    }
+    h3{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .services-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services-box .box{
+        margin: 3% 0;
+    }
+
+
+    .pricing{
+        padding: 5%;
+    }
+    .second-heading i::before{
+        left: 127px;
+        top: 10px;
+    }
+    .second-heading i::after{
+        left: 235px;
+        top: -10px;
+    }
+    .pricing-box{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collabration{
+        padding: 8% 4%;
+    }
+    .collabration p{
+        font-size: 15px;
+    }
+    .collabration p::after{
+        left: 187px;
+bottom: 10px;
+    }
+    .collabration h1{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section .text{
+        width: 396px;
+    }
+    .section .text u{
+        font-size: 15px;
+    }
+    .section .text ul li .rule{
+        font-size: 15px;
+    }
+    .section .text ul li{
+        
+        margin-bottom: 3px;
+    }
+    .image img{
+        width: 100%;
+        left: 0;
+    }
+
+
+    .hirecoworker{
+        padding: 5%;
+    }
+    .third-heading i::before{
+        left: -43px;
+top: 7px;
+    }
+    .third-heading i::after{
+        left: 133px;
+top: 7px;
+    }
+    .hirecoworker .third-heading p{
+        font-size: 16px;
+    }
+    .theway{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+    }
+    .nn{
+        font-size: 16px;
+    }
+
+    .contect{
+        grid-template-columns: repeat(1, 1fr);
+        padding-top: 3%;
+    }
+    .contect .service img{
+        width: 100%;
+object-fit: contain;
+    }
+    .contect .service{
+        grid-row: 1;
+    }
+    .last{
+        height: auto;
+    }
+    .us{
+        margin: 8% 0 5% 0;
+    }
+    .us h3{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .us p{
+        font-size: 17px;
+    }
+
+    .contect-us{
+        padding: 0%;
+    }
+    .form h1{
+        font-size: 30px;
+    }
+    .now b{
+        top: 127px;
+left: 23px;
+    }
+    .new{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form #name{
+        width: 94%;
+    }
+    .new1 input{
+        width: 94%;
+    }
+    .new2 input{
+        width: 94%;
+    }
+    .new3 textarea{
+        width: 93%;
+    }
+    .submit button{
+        padding: 7px 12px;
+        font-size: 15px;
+        bottom: 16px;
+    }
+
+    .location{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    .end {
+        border: 0;
+        margin-bottom: 6%;
+    }
+    .Call-Us img{
+        left: 25px;
+    }
+    .Mail-Us .undo{
+        left: 36px;
+    }
+    .our-location .undo{
+        left: 45px;
+    }
+    .links{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    .social{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
