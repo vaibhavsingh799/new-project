@@ -22,11 +22,11 @@
             
         </div>
             <div class="home">
+                <nav>
+                    <ul id="mobile" class="b">
                 <div class="past-logo">
-                    <img src="./1678676916499.png" >
+                    <img src="./1678676916499.png" style="width: 40px;" id="hidden" class="hidden">
                 </div>
-        <nav>
-            <ul id="mobile" class="b">
                 <li><a class="fon-color" id="fon-color" href="#">services</a></li>
                 <li><a class="fon1" id="fon1" href="#">pricing</a></li>
                 <li><a class="foncolor2" id="foncolor2" href="#">about</a></li>
@@ -478,10 +478,22 @@
         // }
             var menu = document.getElementById('menu');
             menu.onclick = function(){
+                var menu = document.getElementById('menu');
                 let mobile = document.getElementById('mobile');
                 mobile.classList.add('mobile');
+                menu.classList.remove('menu');
+                // mobile.classList.toggle('mobile');
+                // mobile.classList.toggle('menu');
                 
             }
+            var hidden = document.getElementById('hidden');
+            hidden.onclick = function(){
+                var menu = document.getElementById('menu');
+                let mobile = document.getElementById('mobile');
+                mobile.classList.remove('mobile');
+                menu.classList.add('menu');
+            }
+
     </script>
 </body>
 </html>

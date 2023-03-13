@@ -972,6 +972,9 @@ html{
         border-radius: unset;
 height: 760px;
     }
+    .header{
+        width: 90%;
+    }
     .main{
         grid-template-columns: repeat(1, 1fr);
         margin-top: 12px;
@@ -1003,17 +1006,23 @@ height: 760px;
     .logo img{
         width: 72px;
     }
-    .res-logo img{
+    .res-logo .menu{
         display: block;
         position: relative;
-left: 110px;
+left: 109px;
 top: -5px;
+    }
+    .past-logo {
+        display: block;
+        position: absolute;
+top: 20px;
+right: 33px;
     }
     header nav ul{
         opacity: 1.1;
 visibility: visible;
 pointer-events: none;
-width: 216%;
+width: 246%;
 height: 100vh;
 background-color: #000;
 position: absolute;
@@ -1028,7 +1037,7 @@ transform: translateX(100%);
 transition: all 0.3s linear;
     }
     .mobile{
-        transform: translateX(-262px);
+        transform: translateX(-215px);
         opacity: 1;
         background-color: #000;
         visibility: visible;
@@ -1047,12 +1056,12 @@ transition: all 0.3s linear;
         font-size: 15px;
     }
     .heading i::before{
-        left: 120px;
-        top: 10px;
+        left: 100px;
+        top: 12px;
     }
     .heading i::after{
-        left: 241px;
-        top: -10px;
+        left: 215px;
+        top: -12px;
     }
     h3{
         font-size: 30px;
@@ -1070,12 +1079,12 @@ transition: all 0.3s linear;
         padding: 5%;
     }
     .second-heading i::before{
-        left: 127px;
-        top: 10px;
+        left: 107px;
+        top: 13px;
     }
     .second-heading i::after{
-        left: 235px;
-        top: -10px;
+        left: 212px;
+        top: -11px;
     }
     .pricing-box{
         grid-template-columns: repeat(1, 1fr);
@@ -1088,7 +1097,7 @@ transition: all 0.3s linear;
         font-size: 15px;
     }
     .collabration p::after{
-        left: 187px;
+        left: 182px;
 bottom: 10px;
     }
     .collabration h1{
@@ -1099,7 +1108,7 @@ bottom: 10px;
         grid-template-columns: repeat(1, 1fr);
     }
     .section .text{
-        width: 396px;
+        width: auto;
     }
     .section .text u{
         font-size: 15px;
@@ -1121,12 +1130,12 @@ bottom: 10px;
         padding: 5%;
     }
     .third-heading i::before{
-        left: -43px;
-top: 7px;
+        left: -42px;
+top: 9px;
     }
     .third-heading i::after{
-        left: 133px;
-top: 7px;
+        left: 125px;
+top: 9px;
     }
     .hirecoworker .third-heading p{
         font-size: 16px;
@@ -1135,10 +1144,22 @@ top: 7px;
         grid-template-columns: repeat(1, 1fr);
         gap: 3%;
     }
+    .Business h3::before{
+        width: 153px;
+        bottom: -111px;
+    }
     .nn{
         font-size: 16px;
     }
 
+    .pro i::before{
+        left: 101px;
+top: 12px;
+    }
+    .pro i::after{
+        left: 214px;
+top: -12px;
+    }
     .contect{
         grid-template-columns: repeat(1, 1fr);
         padding-top: 3%;
