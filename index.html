@@ -18,7 +18,8 @@
     <section>
     <header class="header" id="header">
         <div class="logo">
-            <img src="./new-logo.png" >
+            <img id="logohai" class="logohai " src="./new-logo-white.png" >
+            <img  id="dusrelogo" class="dusre">
             
         </div>
             <div class="home">
@@ -431,6 +432,8 @@
             var btchange = document.getElementById('btchange');
             // let b = document.getElementsByClassName('bgcolor')[0]
             // var foncolor3 = document.getElementById('fon-color3');
+            let dusrelogo = document.getElementById('dusrelogo');
+            let logohai = document.getElementById('logohai')
             
             if(window.pageYOffset > 150){
                 header.classList.add('bgcolor')
@@ -439,6 +442,11 @@
                 foncolor2.classList.add('foncolor2')
                 foncolor3.classList.add('foncolor3')
                 btchange.classList.add('btchange')
+
+                // dusrelogo.classList.add('gayab2')
+                // dusrelogo.classList.add('dusrelogo')
+                dusrelogo.classList.add('dusrelogo')
+                // logohai.classList.remove('logohai')
             }
             else{
                 header.classList.remove('bgcolor')
@@ -448,6 +456,14 @@
                 foncolor2.classList.remove('foncolor2')
                 foncolor3.classList.remove('foncolor3')
                 btchange.classList.remove('btchange')
+                
+                
+                dusrelogo.classList.remove('dusrelogo')
+                // logohai.classList.add('logohai')
+                // dusrelogo.classList.remove('gayab2')
+                // dusrelogo.classList.remove('dusrelogo')
+                // logohai.classList.add('logohai')
+                // logohai.classList.remove('gayab')
             }
 
 
