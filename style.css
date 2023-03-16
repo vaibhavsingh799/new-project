@@ -1000,6 +1000,7 @@ footer{
     cursor: pointer;
     transition: all 0.3s;
     display: none;
+    z-index: 99999999;
     
 }
 .up button img{
@@ -1082,6 +1083,21 @@ position: absolute;
 
 
 @media only screen and (max-width:500px) {
+
+    .stars{
+        width: 100%;
+    }
+    .swiper{
+        height: 250px;
+    }
+    .rewive{
+        padding: 5% 0% 18px 0%;
+    }
+    .google-rewive{
+        display: flex;
+        flex-direction: column;
+    }
+
     section{
         border-radius: unset;
 height: 760px;
