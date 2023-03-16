@@ -8,6 +8,9 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <title>hirecowoker</title>
+    <!-- slider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,6 +69,96 @@
     </video>
 
 </section>
+
+<!--  slider rewive section -->
+
+<div class="rewive">
+    <div class="google-rewive">
+        <div class="stars">
+            <img src="./google.png" style="max-width:160px;" >
+            <img src="./5-Star-Rating-Reviews-Transparent-PNG.png" style="max-width:160px; margin-bottom: 10px;">
+            <p><b>Excellent</b></p>
+            <p>based on <b>2115 reviews</b></p>
+        </div>
+    
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="info">
+            <img src="./lucas.jpg" style="width: 50px;height: 50px; border-radius: 50%;">
+            <div class="name-info">
+                <b>Lucas</b>
+                <span style="font-size: 15px; color: gray;  margin-top: 5px;">28 Oct 2022</span>
+                <img src="./5-Star-Rating-Reviews-Transparent-PNG.png">
+            </div>
+            <p>Hire Coworker has been great at helping me design and launch my websites and graphic
+                design projects. Hire Coworker's virtual assistant has saved me money, energy and lots
+                of time.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="info">
+            <img src="./noah.jpg" style="width: 50px;height: 50px; border-radius: 50%;">
+            <div class="name-info">
+                <b>Noah</b>
+                <span style="font-size: 15px; color: gray;  margin-top: 5px;">15 Feb 2023</span>
+                <img src="./5-Star-Rating-Reviews-Transparent-PNG.png">
+            </div>
+            <p>Hire Coworker has been great at helping me design and launch my websites and graphic
+                design projects. Hire Coworker's virtual assistant has saved me money, energy and lots
+                of time.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="info">
+            <img src="./olivia.jpg" style="width: 50px;height: 50px; border-radius: 50%;">
+            <div class="name-info">
+                <b>Olivia</b>
+                <span style="font-size: 15px; color: gray;  margin-top: 5px;">2 Feb 2023</span>
+                <img src="./5-Star-Rating-Reviews-Transparent-PNG.png">
+            </div>
+            <p>Hire Coworker has been great at helping me design and launch my websites and graphic
+                design projects. Hire Coworker's virtual assistant has saved me money, energy and lots
+                of time.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="info">
+            <img src="./amelia.jpg" style="width: 50px;height: 50px; border-radius: 50%;">
+            <div class="name-info">
+                <b>Amelia</b>
+                <span style="font-size: 15px; color: gray;  margin-top: 5px;">20 Feb 2022</span>
+                <img src="./5-Star-Rating-Reviews-Transparent-PNG.png">
+            </div>
+            <p>Hire Coworker has been great at helping me design and launch my websites and graphic
+                design projects. Hire Coworker's virtual assistant has saved me money, energy and lots
+                of time.</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="info">
+            <img src="./benjamin.jpg" style="width: 50px;height: 50px; border-radius: 50%;">
+            <div class="name-info">
+                <b>Benjamin</b>
+                <span style="font-size: 15px; color: gray;  margin-top: 5px;">5 Dec 2021</span>
+                <img src="./5-Star-Rating-Reviews-Transparent-PNG.png">
+            </div>
+            <p>Hire Coworker has been great at helping me design and launch my websites and graphic
+                design projects. Hire Coworker's virtual assistant has saved me money, energy and lots
+                of time.</p>
+        </div>
+      </div>
+      <!-- <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div> -->
+    </div>
+    <div class="swiper-pagination"></div>
+ </div>
+</div>
+</div>
+
+
 
     <div class="services">
         <div class="heading">
@@ -422,6 +515,7 @@
         </div>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         function changecolor(){
             // var bgcolor = document.getElementById('bgcolor');
@@ -512,6 +606,21 @@
                 mobile.classList.remove('mobile');
                 menu.classList.add('menu');
             }
+
+
+
+            // slider
+            var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay:{
+        delay:2500,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 
     </script>
 </body>
