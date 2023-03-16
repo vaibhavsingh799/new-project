@@ -1088,7 +1088,7 @@ position: absolute;
         width: 100%;
     }
     .swiper{
-        height: 250px;
+        height: 300px;
     }
     .rewive{
         padding: 5% 0% 18px 0%;
@@ -1097,6 +1097,12 @@ position: absolute;
         display: flex;
         flex-direction: column;
     }
+    .swiper-slide{
+        width: 160px;
+    }
+
+
+
 
     section{
         border-radius: unset;
