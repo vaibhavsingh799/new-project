@@ -593,6 +593,7 @@ font-size: 1.5rem;
 text-transform: uppercase;
 /* letter-spacing: 0.5px; */
 line-height: 1.5;
+position: relative;
 }
 .Business h3::before{
     content: '';
@@ -998,6 +999,15 @@ html{
 
 
 
+@media only screen and (max-width:405px){
+
+    .theway .Business h3::before{
+        width: 66%;
+bottom: 67px;
+position: absolute;
+    }
+}
+
 
 
 @media only screen and (max-width:500px) {
@@ -1095,12 +1105,14 @@ left: -13px;
         font-size: 15px;
     }
     .heading i::before{
-        left: 100px;
-        top: 12px;
+        left: -43px;
+top: 9px;
+position: absolute;
     }
     .heading i::after{
-        left: 215px;
-        top: -12px;
+        left: 69px;
+top: 9px;
+position: absolute;
     }
     h3{
         font-size: 30px;
@@ -1118,12 +1130,14 @@ left: -13px;
         padding: 5%;
     }
     .second-heading i::before{
-        left: 107px;
-        top: 13px;
+        left: -42px;
+top: 9px;
+position: absolute;
     }
     .second-heading i::after{
-        left: 212px;
-        top: -11px;
+        left: 62px;
+top: 9px;
+position: absolute;
     }
     .pricing-box{
         grid-template-columns: repeat(1, 1fr);
@@ -1184,20 +1198,21 @@ top: 9px;
         gap: 3%;
     }
     .Business h3::before{
-        width: 153px;
-        bottom: -111px;
+        width: 100%;
+bottom: 30px;
+position: absolute;
     }
     .nn{
         font-size: 16px;
     }
 
     .pro i::before{
-        left: 101px;
-top: 12px;
+        left: -44px;
+top: 9px;
     }
     .pro i::after{
-        left: 214px;
-top: -12px;
+        left: 67px;
+top: 9px;
     }
     .contect{
         grid-template-columns: repeat(1, 1fr);
