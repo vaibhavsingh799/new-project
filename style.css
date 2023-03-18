@@ -175,7 +175,7 @@ header .home{
 }
 
 .bgcolor .logo .logohai{
-    height: 0;
+    display: none;
 }
 
 .logo .logohai{
@@ -192,16 +192,19 @@ header .home{
     height: 61px;
     width: 80px;
 } */
+.dusre{
+    display: none;
+}
 .dusrelogo{
-    /* display: block; */
+    display: block;
     position: absolute;
     width: 80px;
-    height: 64px;
-    background-image: url(./new-logo.png);
+    /* height: 64px; */
+    /* background-image: url(./new-logo.png);
     background-position: center;
     background-size: 69px;
     background-repeat: no-repeat;
-    border: 0;
+    border: 0; */
 }
 header nav ul{
     display: flex;
